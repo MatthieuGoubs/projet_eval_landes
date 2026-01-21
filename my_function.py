@@ -1,4 +1,5 @@
-#
+
+import geopandas as gpd
 
 def rasterisation (my_folder, in_vector, ref_image, out_image, field_name, sptial_resolution, xmin, ymin, xmax, ymax): 
     my_folder = my_folder
