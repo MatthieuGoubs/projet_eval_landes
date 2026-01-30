@@ -9,7 +9,9 @@ import matplotlib.pyplot as plt
 
 def rasterisation(in_vector, ref_image, out_image, field_name,
                   dtype="Int32", nodata=0, all_touched=True):
-
+    """
+    Permet la rasterisation d'un fichier shp à partir d'une image de référence.
+    """
     # --- 1) Lecture des infos spatiales depuis l'image de référence ---
     ds = gdal.Open(ref_image)
     gt = ds.GetGeoTransform()
