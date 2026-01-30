@@ -6,6 +6,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def rasterisation(in_vector, ref_image, out_image, field_name,
                   dtype="Int32", nodata=0, all_touched=True):
 
